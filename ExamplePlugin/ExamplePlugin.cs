@@ -20,7 +20,7 @@ namespace ExamplePlugin
         public const string PluginGUID = "com.weliveinasociety.ExampleEmotes";
         public const string PluginAuthor = "Nunchuk";
         public const string PluginName = "Example Emotes";
-        public const string PluginVersion = "1.0.0";
+        public const string PluginVersion = "1.0.1";
 
         public static ConfigEntry<KeyboardShortcut> TPoseButton;
         string currentAnim = "";
@@ -30,8 +30,7 @@ namespace ExamplePlugin
             ModSettingsManager.AddOption(new KeyBindOption(TPoseButton));
             Assets.AddBundle($"example_emotes");
             ModSettingsManager.SetModIcon(Assets.Load<Sprite>("@ExampleEmotePlugin_example_emotes:assets/icon.png"));
-            CustomEmotesAPI.AddCustomAnimation(Assets.Load<AnimationClip>("@ExampleEmotePlugin_example_emotes:assets/backflip.anim"), false); //Most standard emote here, non-looping, no sounds
-            CustomEmotesAPI.AddCustomAnimation(Assets.Load<AnimationClip>("@ExampleEmotePlugin_example_emotes:assets/t pose.anim"), true, visible: false); //Similar to previous, but this is a looping emote which is also hidden from the regular emote picker. Has to be invoked from a function as shown below.
+            CustomEmotesAPI.AddCustomAnimation(Assets.Load<AnimationClip>("@ExampleEmotePlugin_example_emotes:assets/t pose.anim"), true/*, visible: false*/); //Similar to previous, but this is a looping emote which is also hidden from the regular emote picker. Has to be invoked from a function as shown below.
             CustomEmotesAPI.animChanged += CustomEmotesAPI_animChanged; //Lets you know when a new emote is played and it's name
 
             //CustomEmotesAPI.CreateNameTokenSpritePair("customSurvivorNameToken", sprite);    For the circle in the middle when you are choosing an emote. 
