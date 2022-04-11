@@ -13,11 +13,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="example_emotes" />
+    <None Remove="caramell.bnk" />
+    <None Remove="caramelldansen" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="example_emotes" />
+    <EmbeddedResource Include="caramell.bnk" />
+    <EmbeddedResource Include="caramelldansen" />
   </ItemGroup>
 
   <ItemGroup>
