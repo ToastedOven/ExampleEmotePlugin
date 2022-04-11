@@ -168,7 +168,6 @@ namespace ExamplePlugin
             foreach (var assetName in assetBundle.GetAllAssetNames())
             {
                 string path = assetName.ToLower();
-
                 if (path.StartsWith("assets/"))
                     path = path.Remove(0, "assets/".Length);
                 AssetIndices[path] = index;
@@ -195,7 +194,6 @@ namespace ExamplePlugin
 
         public static T Load<T>(string assetName) where T : UnityEngine.Object
         {
-            DebugClass.Log($"----------[{assetName}]");
             if (assetName.Contains(":"))
             {
                 string[] path = assetName.Split(':');

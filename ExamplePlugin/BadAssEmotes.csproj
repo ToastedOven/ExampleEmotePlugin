@@ -13,8 +13,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="badassemotes" />
+    <None Remove="BadAssEmotes.bnk" />
     <None Remove="caramell.bnk" />
     <None Remove="caramelldansen" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="badassemotes" />
+    <EmbeddedResource Include="BadAssEmotes.bnk" />
   </ItemGroup>
 
   <ItemGroup>
