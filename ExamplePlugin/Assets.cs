@@ -195,6 +195,7 @@ namespace ExamplePlugin
 
         public static T Load<T>(string assetName) where T : UnityEngine.Object
         {
+            DebugClass.Log($"----------[{assetName}]");
             if (assetName.Contains(":"))
             {
                 string[] path = assetName.Split(':');
