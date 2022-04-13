@@ -20,7 +20,7 @@ namespace ExamplePlugin
         public const string PluginGUID = "com.weliveinasociety.ExampleEmotes";
         public const string PluginAuthor = "Nunchuk";
         public const string PluginName = "Example Emotes";
-        public const string PluginVersion = "1.0.1";
+        public const string PluginVersion = "1.0.2";
 
         public static ConfigEntry<KeyboardShortcut> TPoseButton;
         string currentAnim = "";
