@@ -17,7 +17,7 @@ namespace ExamplePlugin
         /// <param name="assetBundleLocation"></param>
         public static void AddBundle(string assetBundleLocation)
         {
-            using var assetBundleStream = Assembly.GetExecutingAssembly().GetManifestResourceStream($"ExampleEmotePlugin.{assetBundleLocation}");
+            using var assetBundleStream = Assembly.GetExecutingAssembly().GetManifestResourceStream($"TPosePlugin.{assetBundleLocation}");
             AssetBundle assetBundle = AssetBundle.LoadFromStream(assetBundleStream);
 
             int index = AssetBundles.Count;
