@@ -15,11 +15,12 @@
   <ItemGroup>
     <None Remove="caramell.bnk" />
     <None Remove="caramelldansen" />
+    <None Remove="caramelldeeznuts.bnk" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="caramell.bnk" />
     <EmbeddedResource Include="caramelldansen" />
+    <EmbeddedResource Include="caramelldeeznuts.bnk" />
   </ItemGroup>
 
   <ItemGroup>
