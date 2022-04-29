@@ -19,7 +19,7 @@ namespace ExamplePlugin
         public const string PluginGUID = "com.weliveinasociety.caramelldansen";
         public const string PluginAuthor = "Nunchuk";
         public const string PluginName = "Caramelldansen";
-        public const string PluginVersion = "1.0.3";
+        public const string PluginVersion = "1.0.4";
         public void Awake()
         {
             Assets.PopulateAssets();
