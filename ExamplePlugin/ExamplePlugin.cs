@@ -25,7 +25,7 @@ namespace ExamplePlugin
         string currentAnim = "";
         public void Awake()
         {
-            TPoseButton = CustomEmotesAPI.instance.Config.Bind<KeyboardShortcut>("Controls", "T-Pose Button", new KeyboardShortcut(KeyCode.T), "Hold to T-Pose");
+            TPoseButton = Config.Bind<KeyboardShortcut>("Controls", "T-Pose Button", new KeyboardShortcut(KeyCode.T), "Hold to T-Pose");
             ModSettingsManager.AddOption(new KeyBindOption(TPoseButton));
             Assets.AddBundle($"example_emotes");
             ModSettingsManager.SetModIcon(Assets.Load<Sprite>("@ExampleEmotePlugin_example_emotes:assets/icon.png"));
