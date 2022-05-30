@@ -19,13 +19,13 @@ namespace ExamplePlugin
         public const string PluginGUID = "com.weliveinasociety.caramelldansen";
         public const string PluginAuthor = "Nunchuk";
         public const string PluginName = "Caramelldansen";
-        public const string PluginVersion = "1.0.4";
+        public const string PluginVersion = "1.0.6";
         public void Awake()
         {
             Assets.PopulateAssets();
-            Assets.AddSoundBank("caramelldeeznuts.bnk");
+            Assets.AddSoundBank("caramellNEW.bnk");
             Assets.LoadSoundBanks();
-            CustomEmotesAPI.AddCustomAnimation(Assets.Load<AnimationClip>("@ExampleEmotePlugin_caramelldansen:assets/animationreplacements/caramelldansen.anim"), false, "PlayCaramell", "StopCaramell", dimWhenClose: true,syncAnim: true, syncAudio: true);
+            CustomEmotesAPI.AddCustomAnimation(Assets.Load<AnimationClip>("@ExampleEmotePlugin_caramelldansen:assets/animationreplacements/caramelldansen.anim"), false, "Play_Caramell", "Stop_Caramell", dimWhenClose: true,syncAnim: true, syncAudio: true);
         }
     }
 }
